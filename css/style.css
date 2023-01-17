@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+}
+
+#div1 {
+    animation-timing-function: linear;
+}
+
+/* Cuerpo de pagina */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Color Acento */
+.color-acento {
+    color: rgba(139, 215, 25, 0.818)
+}
+
+/* Titulos y texto */
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Tamaño al Logo principal */
+.container .logo {
+    font-size: 80px;
+}
+
+/* Botones */
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .5em;
+    border-radius: 5px;
+    border: 2px solid rgba (0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+/* Estilo cuando paso por encima de los botones */
+button:hover {
+    cursor: pointer;
+    background-color: rgb(94, 29, 155);
+}
+
+/* Limites al contenedor */
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.container h2 {
+    text-align: center;
+}
+
+/* Estilo al header */
+header {
+    background-color: rgb(240, 240, 240);
+
+}
+
+header .logo {
+    margin: auto;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+header .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: blueviolet;
+}
+
+/* Imagen de fondo principal */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/img/fondo-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero button {
+    font-size: 1.85rem;
+}
+
+/*  Imagenes estilo carta cursos */
+.programas {
+    text-align: center;
+    padding 100px 20px;
+}
+
+/* Seccion de Cursos */
+#nuestros-cursos {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-cursos .container {
+    padding: 150px 10px;
+}
+
+#nuestros-cursos h2 {
+    margin-top: 0;
+}
+
+#nuestros-cursos p {
+    display: none;
+}
+
+#nuestros-cursos .carta {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 22px;
+    border-radius: 18px;
+}
+
+#nuestros-cursos .carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/img/front-end.jpg);
+}
+
+#nuestros-cursos .carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/img/fullstack.png);
+}
+
+#nuestros-cursos .carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/img/pyton.jpg);
+}
+
+/* Seccion Empleos */
+#nuestros-empleos {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-empleos .container {
+    padding: 4rem 1rem;
+}
+
+#nuestros-empleos h2 {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+#nuestros-empleos p {
+    display: 1;
+}
+
+#nuestros-empleos .carta {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 55px;
+    margin: 25px;
+    border-radius: 18px;
+}
+
+#nuestros-empleos .carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/junior.png);
+}
+
+#nuestros-empleos .carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/img/arquitecto-soft.png);
+}
+
+#nuestros-empleos .carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/img/freelance.jpg);
+}
+
+/* Seccion caracteristicas */
+#caracteristicas .imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/img/caracteristicas.png);
+}
+
+#caracteristicas h2 {
+    text-align: center;
+}
+
+#caracteristicas li {
+    font-size: 1.95rem;
+    margin: 20px 2px;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* Seccion para aplicar a los cursos*/
+#aplicar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(/img/back-aplicar.jpg);
+}
+
+#aplicar button {
+    font-size: 1.85rem;
+}
+
+#aplicar h2 {
+    font-size: 8vw;
+}
+
+#somos-codeaya p {
+    margin: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Adaptacion a Desktop */
+@media (min-width:1024px) {
+
+    /* Header */
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    /* H1 Pantalla principal */
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    /* Nosotros */
+    #somos-codeaya .container {
+        display: flex;
+        justify-content: center;
+        margin: 10%;
+    }
+
+    #somos-codeaya .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        padding: 0px 30px;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #somos-codeaya h2 {
+        margin: 0;
+    }
+
+    #somos-codeaya .img-container {
+        background-image: url("../img/somos-codeaya.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        margin: 30px;
+    }
+
+    /* Cursos */
+    #nuestros-cursos .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-cursos p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-cursos h3 {
+        margin-top: 0;
+    }
+
+    #nuestros-cursos .carta {
+        padding: 15px;
+    }
+
+    /* Empleos */
+
+    #nuestros-empleos .empleos {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-empleos p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-empleos h3 {
+        margin-top: 0;
+    }
+
+    #nuestros-empleos .carta {
+        padding: 15px;
+    }
+
+    /* Footer */
+    footer .container {
+        justify-content: flex-end;
+    }
+
+}
