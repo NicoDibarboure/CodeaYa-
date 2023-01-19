@@ -120,7 +120,7 @@ header a:hover {
     color: white;
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/img/fondo-hero.jpg);
+            rgba(0, 0, 0, 0.5)), url(../img/fondo-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -167,19 +167,19 @@ header a:hover {
 #nuestros-cursos .carta:first-child {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/img/front-end.jpg);
+            rgba(0, 0, 0, 0.5)), url(../img/front-end.jpg);
 }
 
 #nuestros-cursos .carta:nth-child(2) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/img/fullstack.png);
+            rgba(0, 0, 0, 0.5)), url(../img/fullstack.png);
 }
 
 #nuestros-cursos .carta:nth-child(3) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/img/pyton.jpg);
+            rgba(0, 0, 0, 0.5)), url(../img/pyton.jpg);
 }
 
 /* Seccion Empleos */
@@ -220,13 +220,13 @@ header a:hover {
 #nuestros-empleos .carta:nth-child(2) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/img/arquitecto-soft.png);
+            rgba(0, 0, 0, 0.5)), url(../img/arquitecto-soft.png);
 }
 
 #nuestros-empleos .carta:nth-child(3) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/img/freelance.jpg);
+            rgba(0, 0, 0, 0.5)), url(../img/freelance.jpg);
 }
 
 /* Seccion caracteristicas */
@@ -241,7 +241,7 @@ header a:hover {
     color: white;
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/img/caracteristicas.png);
+            rgba(0, 0, 0, 0.5)), url(../img/caracteristicas.png);
 }
 
 #caracteristicas h2 {
@@ -269,7 +269,7 @@ header a:hover {
     background-repeat: no-repeat;
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url(/img/back-aplicar.jpg);
+            rgba(0, 0, 0, 0.5)), url(../img/back-aplicar.jpg);
 }
 
 #aplicar button {
