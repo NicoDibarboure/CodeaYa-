@@ -6,7 +6,6 @@
     animation-timing-function: linear;
 }
 
-
 /* Cuerpo de pagina */
 body {
     font-family: 'Roboto', sans-serif;
@@ -134,7 +133,7 @@ header a:hover {
 /*  Imagenes estilo carta cursos */
 .programas {
     text-align: center;
-    padding 100px 20px;
+    padding: 100px 20px;
 }
 
 /* Seccion de Cursos */
@@ -304,7 +303,12 @@ footer .container {
 }
 
 /* Adaptacion a Desktop */
-@media (min-width:1024px) {
+@media (min-width:1023px) {
+
+    /* Hero */
+    #hero {
+        height: 75vh;
+    }
 
     /* Header */
     header .container {
