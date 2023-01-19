@@ -11,14 +11,23 @@
     <link rel="shortcut icon" href="img/logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
-<!-- Mergear la rama animaciones al master -->
+<!-- Mergear la rama animaciones al master 
+git status
+git add .
+git commit -m "Animacion y transformacion al logo"
+git checkout master
+git merge Animacion 
+git push origin master
+-->
 
 <body>
     <header>
         <div class="container">
-            <a href="index.html" class="logo">Codea<span class="color-acento">Ya!</span></a>
+            <a class="logo animate__animated animate__bounceInLeft" href="index.html" >Codea<span class="color-acento">Ya!</span></a>
             <nav>
                 <a href="pages/nosotros.html">Sobre Nosotros</a>
                 <a href="pages/cursos.html">Nuestros Cursos</a>
