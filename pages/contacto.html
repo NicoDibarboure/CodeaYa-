@@ -19,33 +19,54 @@
 
 <body class="bg-secondary">
     <header>
-        <div class="container">
+        <div class="container mb-4">
             <a href="../index.html" class="logo animate__animated animate__flip">Codea<span
                     class="color-acento">Ya!</span></a>
         </div>
     </header>
-
-
     <div class="container">
-        <form class="row">
+        <form class="row g-3">
 
             <div class="col-6">
-                <label for="emailInput" class="form-label">Email</label>
-                <input type="email" class="form-control" id="emailInput">
+                <label for="Nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="Nombre" placeholder="Ingresa tu Nombre">
             </div>
+            <div class="col-6">
+                <label for="Apellido" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" id="Apellido" placeholder="Ingresa tu Apellido">
+            </div>
+            <div class="col-6">
+                <label for="Red" class="form-label">Red Social:</label>
+                <input type="text" class="form-control" id="Red" placeholder="Ingresa tu red social">
+            </div>
+            <div class="col-6">
+                <label for="emailInput" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Ingresa tu Email">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input type="checkbox" id="checkTerms" class="form-check-input">
+                    <label for="checkTerms" class="form-check-label">Acepto los términos</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Ingresa tu Mensaje"></textarea>
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary">Enviar</button>
+            </div>
+
         </form>
     </div>
-
-
-
-    <footer>
-        <div class="container">
-            <p>Sitio Creado por Nicolás Dibarboure</p>
-        </div>
-    </footer>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
 </body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<footer>
+    <div class="container">
+        <p>"Copyright Nicolas |2023"</p>
+    </div>
+</footer>
 
 </html>
