@@ -12,32 +12,31 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-secondary">
     <header>
         <div class="container">
-            <a href="../index.html" class="logo">Codea<span class="color-acento">Ya!</span></a>
-            <nav>
-                <a class="animate__animated animate__rotateInDownLeft" href="nosotros.html">Sobre
-                    Nosotros</a>
-                <a class="animate__animated animate__bounceInLeft" href="cursos.html">Nuestros
-                    Cursos</a>
-                <a class="animate__animated animate__bounceInUp" href="caracteristicas.html">Caracteristicas</a>
-                <a class="animate__animated animate__bounceInRight" href="contactanos.html">Contáctanos</a>
-                <a class="animate__animated animate__rotateInDownRight" href="empleo.html">Empleos</a>
-            </nav>
+            <a href="../index.html" class="logo animate__animated animate__flip">Codea<span
+                    class="color-acento">Ya!</span></a>
         </div>
     </header>
 
-    <section id="aplicar">
-        <div class="img">
-            <h2>Listo para Programar?</h2>
-            <form action="pages/contacto.html">
-                <a class="btn btn-primary" href="contacto.html" role="button">Contactanos!</a>
-            </form>
-        </div>
-    </section>
+
+    <div class="container">
+        <form class="row">
+
+            <div class="col-6">
+                <label for="emailInput" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailInput">
+            </div>
+        </form>
+    </div>
+
+
 
     <footer>
         <div class="container">

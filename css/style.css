@@ -303,6 +303,15 @@ footer .container {
 }
 
 /* Adaptacion a Desktop */
+@media (max-width:400px) {
+    a.logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+}
+
 @media (min-width:1023px) {
 
     /* Hero */
