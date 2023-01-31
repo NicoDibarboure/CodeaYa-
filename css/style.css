@@ -313,11 +313,11 @@ footer .container {
 }
 
 .c-item {
-    height: 480px;
+    height: 320px;
 }
 
 .c-img {
-    height: 100%;
+    width: 100%;
     object-fit: cover;
     filter: brightness(0.6);
 }
