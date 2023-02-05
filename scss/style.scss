@@ -1,1 +1,3 @@
-@import url(../scss/_resets.scss);
+@import '../scss/base/resets';
+@import '../scss/base/_etiquetas.scss';
+@import '../scss/layout/header.scss';

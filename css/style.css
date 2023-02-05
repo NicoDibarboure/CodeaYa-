@@ -1,43 +1,6 @@
-#div1 {
-    animation-timing-function: linear;
-}
-
-/* Cuerpo de pagina */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-}
-
 /* Color Acento */
-.color-acento {
-    color: rgba(139, 215, 25, 0.818)
-}
 
-/* Titulos y texto */
-h1 {
-    font-size: 3.5em;
-}
 
-h2 {
-    font-size: 2.7em;
-}
-
-h3 {
-    font-size: 2em;
-}
-
-p {
-    font-size: 1.25em;
-}
-
-ul {
-    list-style: none;
-}
-
-/* Tamaño al Logo principal */
-.container .logo {
-    font-size: 80px;
-}
 
 /* Botones */
 button {
@@ -65,44 +28,6 @@ button:hover {
 
 .container h2 {
     text-align: center;
-}
-
-/* Estilo al header */
-header {
-    background-color: rgb(240, 240, 240);
-
-}
-
-header .logo {
-    margin: auto;
-    padding: 25px 30px;
-    font-weight: bold;
-    font-size: 2em;
-}
-
-header .container {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
-}
-
-header a {
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
-
-header a:hover {
-    color: blueviolet;
 }
 
 /* Imagen de fondo principal */
