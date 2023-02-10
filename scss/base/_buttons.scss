@@ -1,0 +1,20 @@
+
+
+/* Botones */
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: .5em;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: #8a2be2;
+
+    /* Estilo cuando paso por encima de los botones */
+    &:hover {
+    cursor: pointer;
+    background-color: rgb(94, 29, 155);
+}
+}
+

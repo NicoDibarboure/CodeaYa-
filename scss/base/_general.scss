@@ -1,0 +1,32 @@
+// Fuente principal
+$fuente-principal: 'Roboto', sans-serif;
+
+$colores: (
+"blackground-empleo":rgb(30, 30, 30),
+"blanco": white,
+"color-hover":rgb(94, 29, 155),
+"fondo-negro-imagenes":rgba(0, 0, 0, 0.5),
+"gris":rgb(100, 100, 100),
+"negro": black,
+"principal": #8a2be2,
+"color-acento": rgba(139, 215, 25, 0.818),
+);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#div1 {
+    animation-timing-function: linear;
+}
+
+/* Cuerpo de pagina */
+body {
+    font-family: $fuente-principal;
+    margin: 0;
+}
+.color-acento {
+    color: map-get($map: $colores, $key: "color-acento");
+}

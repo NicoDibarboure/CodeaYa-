@@ -1,3 +1,7 @@
+$fuentes: (
+    "logo": 80px,
+);
+
 /* Titulos y texto */
 h1 {
     font-size: 3.5em;
@@ -21,5 +25,5 @@ ul {
 
 /* Tamaño al Logo principal */
 .container .logo {
-    font-size: 80px;
+    font-size: map-get($map: $fuentes, $key: "logo" );
 }

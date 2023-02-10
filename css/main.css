@@ -9,7 +9,7 @@
 
 /* Cuerpo de pagina */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0; }
 
 .color-acento {
@@ -35,33 +35,173 @@ ul {
 .container .logo {
   font-size: 80px; }
 
+/*  Imagenes estilo carta cursos */
+.programas {
+  text-align: center;
+  padding: 100px 20px; }
+
+/* Seccion de Cursos */
+#nuestros-cursos {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center; }
+
+#nuestros-cursos .container {
+  padding: 150px 10px; }
+
+#nuestros-cursos h2 {
+  margin-top: 0; }
+
+#nuestros-cursos p {
+  display: none; }
+
+#nuestros-cursos .carta {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+  margin: 22px;
+  border-radius: 18px; }
+
+#nuestros-cursos .carta:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/front-end.jpg); }
+
+#nuestros-cursos .carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fullstack.png); }
+
+#nuestros-cursos .carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pyton.jpg); }
+
+/* Seccion caracteristicas */
+#caracteristicas .imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/caracteristicas.png); }
+
+#caracteristicas h2 {
+  text-align: center; }
+
+#caracteristicas li {
+  font-size: 1.95rem;
+  margin: 20px 2px;
+  align-items: center;
+  font-weight: bold; }
+
+/* Botones */
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: .5em;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #8a2be2;
+  /* Estilo cuando paso por encima de los botones */ }
+  button:hover {
+    cursor: pointer;
+    background-color: #5e1d9b; }
+
+/* Seccion caracteristicas */
+#caracteristicas .imagen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/caracteristicas.png); }
+
+#caracteristicas h2 {
+  text-align: center; }
+
+#caracteristicas li {
+  font-size: 1.95rem;
+  margin: 20px 2px;
+  align-items: center;
+  font-weight: bold; }
+
+/* Carousel */
+.c-item {
+  height: 320px; }
+
+.c-img {
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.6); }
+
 /* Estilo al header */
 header {
-  background-color: #f0f0f0; }
-
-header .logo {
-  margin: auto;
-  padding: 25px 30px;
-  font-weight: bold;
-  font-size: 2em; }
-
-header .container {
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-header nav {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-bottom: 25px; }
+  background-color: white; }
+  header .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  header .logo {
+    margin: auto;
+    padding: 25px 30px;
+    font-size: 2em; }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px; }
 
 header a {
   padding: 5px 12px;
   text-decoration: none;
   font-weight: bold;
   color: black; }
+  header a:hover {
+    color: #8a2be2; }
 
-header a:hover {
-  color: blueviolet; }
+/* Imagen de fondo principal */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 60vh;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  #hero button {
+    font-size: 1.85rem; }
+
+/* Limites al contenedor */
+.container {
+  max-width: 1400px;
+  margin: auto; }
+  .container h2 {
+    text-align: center; }
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #e6e6e6; }
+  footer p {
+    margin: 0;
+    padding: 12px;
+    color: #646464; }
+  footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  footer .footer-contacto {
+    width: 100%;
+    background-color: #e6e6e6;
+    position: fixed;
+    bottom: 0; }
