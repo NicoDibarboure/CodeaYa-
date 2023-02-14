@@ -1,0 +1,142 @@
+/* Adaptacion a Desktop */
+    a.logo {
+            @include logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: auto;
+                font-size: 2rem;
+        } 
+    }
+
+
+    /* Hero */
+    #hero {
+        @include tablet {
+            height: 70vh;
+        }
+        h1 {
+            @include tablet {
+                font-size: 2em;
+            }
+        }
+    }
+
+
+
+    /* Header */
+    header{
+        @include tablet {
+        .container {  
+                flex-direction: row;
+                justify-content: space-between;
+            } 
+            nav {
+                flex-direction: row;
+                padding-bottom: 0;
+                padding-right: 20px;
+            }
+        }
+    } 
+        /* Nosotros */
+        #somos-codeaya {
+            @include tablet {
+                    .container {
+                    display: flex;
+                    justify-content: center;
+                    margin: 10%;
+                
+                    .texto {
+                    width: 50%;
+                    max-width: 600px;
+                    text-align: initial;
+                    padding-left: 30px;
+                    padding: 0px 30px;
+                    margin: 20px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+    
+                    h2 {
+                        margin: 0;
+
+                    }
+                    .img-container {
+                        background-image: url("../img/somos-codeaya.jpg");
+                        background-size: cover;
+                        background-position: center center;
+                        height: 500px;
+                        width: 400px;
+                        margin: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Cursos */
+    #nuestros-cursos {
+        @include tablet {
+        .programas {
+            display: flex;
+            justify-content: center;
+            p {
+                display: block;
+                margin-bottom: 30px;
+            }
+            h3 {
+                margin-top: 0;
+            }
+        
+            .carta {
+                padding: 15px;
+            }
+        }
+    }
+}   
+        /* Empleos */
+    
+        #nuestros-empleos {
+            @include tablet {
+            .empleos {
+                display: flex;
+                justify-content: center;
+            }
+        
+            p {
+                display:flex;
+                margin-bottom: 30px;
+            }
+        
+            h3 {
+                margin-top: 0;
+            }
+        
+            .carta {
+                padding: 15px;
+            }
+        }
+    }    
+        
+    /* Footer */
+    footer {
+        @include tablet {
+            width: 100%;
+            background-color: rgb(230, 230, 230);
+
+            p {
+                margin: 0;
+                padding: 12px;
+                color: rgb(100, 100, 100);
+            }
+        
+            .container {
+                height: 150px;
+                display: flex;
+                justify-content: right;
+                align-items: flex-end;
+            }
+        }
+    }
+
+   

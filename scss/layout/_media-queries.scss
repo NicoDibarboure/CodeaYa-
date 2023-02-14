@@ -1,0 +1,11 @@
+@mixin tablet {
+    @media screen and (min-width: 1023px){
+        @content;
+    }
+}
+
+@mixin logo {
+    @media screen and (max-width:400px){
+        @content;
+    }
+}

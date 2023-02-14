@@ -1,3 +1,10 @@
+// Layout
+@import '../scss/layout/_media-queries.scss';
+@import '../scss/layout/_header.scss';
+@import '../scss/layout/_body.scss';
+@import '../scss/layout/_footer.scss';
+
+
 // Base
 @import '../scss/base/_general.scss';
 @import '../scss/base/_etiquetas.scss';
@@ -6,16 +13,7 @@
 @import '../scss/base/_buttons.scss';
 @import '../scss/base/_caracteristicas.scss';
 @import '../scss/base/_carousel.scss';
-
-
-
-
-
-// Layout
-@import '../scss/layout/_header.scss';
-@import '../scss/layout/_body.scss';
-@import '../scss/layout/_footer.scss';
-
+@import '../scss/base/mobile-desktop.scss';
 
 
 

@@ -1,4 +1,72 @@
 @charset "UTF-8";
+/* Estilo al header */
+header {
+  background-color: white; }
+  header .container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  header .logo {
+    margin: auto;
+    padding: 25px 30px;
+    font-size: 2em; }
+  header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px; }
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black; }
+  header a:hover {
+    color: #8a2be2; }
+
+/* Imagen de fondo principal */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 60vh;
+  color: white;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  #hero button {
+    font-size: 1.85rem; }
+
+/* Limites al contenedor */
+.container {
+  max-width: 1400px;
+  margin: auto; }
+  .container h2 {
+    text-align: center; }
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #e6e6e6; }
+  footer p {
+    margin: 0;
+    padding: 12px;
+    color: #646464; }
+  footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  footer .footer-contacto {
+    width: 100%;
+    background-color: #e6e6e6;
+    position: fixed;
+    bottom: 0; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -138,70 +206,97 @@ button {
   object-fit: cover;
   filter: brightness(0.6); }
 
-/* Estilo al header */
-header {
-  background-color: white; }
+/* Adaptacion a Desktop */
+@media screen and (max-width: 400px) {
+  a.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    font-size: 2rem; } }
+
+/* Hero */
+@media screen and (min-width: 1023px) {
+  #hero {
+    height: 70vh; } }
+
+@media screen and (min-width: 1023px) {
+  #hero h1 {
+    font-size: 2em; } }
+
+/* Header */
+@media screen and (min-width: 1023px) {
   header .container {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-  header .logo {
-    margin: auto;
-    padding: 25px 30px;
-    font-size: 2em; }
+    flex-direction: row;
+    justify-content: space-between; }
   header nav {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px; }
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px; } }
 
-header a {
-  padding: 5px 12px;
-  text-decoration: none;
-  font-weight: bold;
-  color: black; }
-  header a:hover {
-    color: #8a2be2; }
-
-/* Imagen de fondo principal */
-#hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 60vh;
-  color: white;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo-hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
-  #hero button {
-    font-size: 1.85rem; }
-
-/* Limites al contenedor */
-.container {
-  max-width: 1400px;
-  margin: auto; }
-  .container h2 {
-    text-align: center; }
-
-/* Footer */
-footer {
-  width: 100%;
-  background-color: #e6e6e6; }
-  footer p {
-    margin: 0;
-    padding: 12px;
-    color: #646464; }
-  footer .container {
-    height: 150px;
+/* Nosotros */
+@media screen and (min-width: 1023px) {
+  #somos-codeaya .container {
     display: flex;
     justify-content: center;
-    align-items: flex-end; }
-  footer .footer-contacto {
+    margin: 10%; }
+    #somos-codeaya .container .texto {
+      width: 50%;
+      max-width: 600px;
+      text-align: initial;
+      padding-left: 30px;
+      padding: 0px 30px;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      #somos-codeaya .container .texto h2 {
+        margin: 0; }
+      #somos-codeaya .container .texto .img-container {
+        background-image: url("../img/somos-codeaya.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+        margin: 30px; } }
+
+/* Cursos */
+@media screen and (min-width: 1023px) {
+  #nuestros-cursos .programas {
+    display: flex;
+    justify-content: center; }
+    #nuestros-cursos .programas p {
+      display: block;
+      margin-bottom: 30px; }
+    #nuestros-cursos .programas h3 {
+      margin-top: 0; }
+    #nuestros-cursos .programas .carta {
+      padding: 15px; } }
+
+/* Empleos */
+@media screen and (min-width: 1023px) {
+  #nuestros-empleos .empleos {
+    display: flex;
+    justify-content: center; }
+  #nuestros-empleos p {
+    display: flex;
+    margin-bottom: 30px; }
+  #nuestros-empleos h3 {
+    margin-top: 0; }
+  #nuestros-empleos .carta {
+    padding: 15px; } }
+
+/* Footer */
+@media screen and (min-width: 1023px) {
+  footer {
     width: 100%;
-    background-color: #e6e6e6;
-    position: fixed;
-    bottom: 0; }
+    background-color: #e6e6e6; }
+    footer p {
+      margin: 0;
+      padding: 12px;
+      color: #646464; }
+    footer .container {
+      height: 150px;
+      display: flex;
+      justify-content: right;
+      align-items: flex-end; } }
