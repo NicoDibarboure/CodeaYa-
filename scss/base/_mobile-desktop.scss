@@ -17,7 +17,7 @@
         }
         h1 {
             @include tablet {
-                font-size: 2em;
+                font-size: 5em;
             }
         }
     }
@@ -28,11 +28,10 @@
     header{
         @include tablet {
         .container {  
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: space-between;
             } 
             nav {
-                flex-direction: row;
                 padding-bottom: 0;
                 padding-right: 20px;
             }
@@ -43,9 +42,10 @@
             @include tablet {
                     .container {
                     display: flex;
+                    flex-direction: column-reverse;
                     justify-content: center;
                     margin: 10%;
-                
+                    }
                     .texto {
                     width: 50%;
                     max-width: 600px;
@@ -56,23 +56,25 @@
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
-    
+                    }
                     h2 {
                         margin: 0;
-
                     }
+                
                     .img-container {
-                        background-image: url("../img/somos-codeaya.jpg");
+                        background-image: url("../../img/somos-codeaya.jpg");
                         background-size: cover;
                         background-position: center center;
                         height: 500px;
                         width: 400px;
                         margin: 30px;
+                        display: flex;
+                        flex-direction: column;
                     }
-                }
+                
             }
         }
-    }
+    
 
     /* Cursos */
     #nuestros-cursos {
