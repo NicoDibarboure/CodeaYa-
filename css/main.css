@@ -52,21 +52,17 @@ header {
 /* Footer */
 footer {
   width: 100%;
-  background-color: #e6e6e6; }
+  background-color: #e6e6e6;
+  position: absolute; }
   footer p {
     margin: 0;
     padding: 12px;
     color: #646464; }
   footer .container {
-    height: 150px;
+    height: 176px;
     display: flex;
     justify-content: center;
     align-items: flex-end; }
-  footer .contacto {
-    width: 100%;
-    background-color: #e6e6e6;
-    position: fixed;
-    bottom: 0; }
 
 * {
   box-sizing: border-box;
@@ -114,32 +110,25 @@ ul {
   background-color: #1e1e1e;
   color: white;
   text-align: center; }
-
-#nuestros-cursos .container {
-  padding: 150px 10px; }
-
-#nuestros-cursos h2 {
-  margin-top: 0; }
-
-#nuestros-cursos p {
-  display: none; }
-
-#nuestros-cursos .carta {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding: 50px;
-  margin: 22px;
-  border-radius: 18px; }
-
-#nuestros-cursos .carta:first-child {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/front-end.jpg); }
-
-#nuestros-cursos .carta:nth-child(2) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fullstack.png); }
-
-#nuestros-cursos .carta:nth-child(3) {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pyton.jpg); }
+  #nuestros-cursos .container {
+    padding: 150px 10px; }
+  #nuestros-cursos h2 {
+    margin-top: 0; }
+  #nuestros-cursos p {
+    display: none; }
+  #nuestros-cursos .carta {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 22px;
+    border-radius: 18px; }
+  #nuestros-cursos .carta:first-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/front-end.jpg); }
+  #nuestros-cursos .carta:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fullstack.png); }
+  #nuestros-cursos .carta:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pyton.jpg); }
 
 /* Seccion caracteristicas */
 #caracteristicas .imagen {
@@ -299,7 +288,7 @@ header {
     flex-direction: column; } }
 
 /* Cursos */
-@media screen and (max-width: 1023px) {
+@media screen and (min-width: 820px) {
   #nuestros-cursos .programas {
     display: flex;
     justify-content: center; }

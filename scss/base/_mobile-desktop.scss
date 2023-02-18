@@ -39,7 +39,6 @@ header {
         .logo {
             margin: auto;
             padding: 25px 30px;
-            // font-weight: map-get($map: $fuentes, $key:"bold" );
             font-size: 2em;
         }
         
@@ -62,48 +61,48 @@ header {
     } 
 }
 
-        /* Nosotros */
-        #somos-codeaya {
-            @include tablet {
-                    .container {
-                    display: flex;
-                    flex-direction: column-reverse;
-                    justify-content: center;
-                    margin: 10%;
-                    }
-                    .texto {
-                    width: 50%;
-                    max-width: 600px;
-                    text-align: initial;
-                    padding-left: 30px;
-                    padding: 0px 30px;
-                    margin: 20px;
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    }
-                    h2 {
-                        margin: 0;
-                    }
+    /* Nosotros */
+    #somos-codeaya {
+        @include tablet {
+                .container {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                margin: 10%;
+                }
+                .texto {
+                width: 50%;
+                max-width: 600px;
+                text-align: initial;
+                padding-left: 30px;
+                padding: 0px 30px;
+                margin: 20px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                }
+                h2 {
+                margin: 0;
+                }
                 
-                    .img-container {
-                        background-image: url("../../img/somos-codeaya.jpg");
-                        background-size: cover;
-                        background-position: center center;
-                        height: 500px;
-                        width: 400px;
-                        margin: 30px;
-                        display: flex;
-                        flex-direction: column;
-                    }
+                .img-container {
+                background-image: url("../../img/somos-codeaya.jpg");
+                background-size: cover;
+                background-position: center center;
+                height: 500px;
+                width: 400px;
+                margin: 30px;
+                display: flex;
+                flex-direction: column;
+                }
                 
-            }
         }
+    }
     
 
     /* Cursos */
     #nuestros-cursos {
-        @include tablet {
+        @include mobile {
         .programas {
             display: flex;
             justify-content: center;

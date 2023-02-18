@@ -3,26 +3,18 @@
 footer {
     width: 100%;
     background-color: rgb(230, 230, 230);
+    position: absolute;
      p {
         margin: 0;
         padding: 12px;
         color: rgb(100, 100, 100);
     }
     .container {
-        height: 150px;
+        height: 176px;
         display: flex;
-        justify-content: center;
+        justify-content:center;
         align-items: flex-end;
     }
-    .contacto {
-        width: 100%;
-        background-color: rgb(230, 230, 230);
-        position: fixed;
-        bottom: 0;
-    }
 }
-
-
-
 
 

@@ -4,6 +4,12 @@
     }
 }
 
+@mixin mobile {
+    @media screen and (min-width: 820px){
+        @content;
+    }
+}
+
 @mixin logo {
     @media screen and (max-width:400px){
         @content;
