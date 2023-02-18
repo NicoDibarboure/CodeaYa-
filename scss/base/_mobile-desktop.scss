@@ -24,19 +24,44 @@
 
 
 
-    /* Header */
-    header{
-        @include tablet {
-        .container {  
-                flex-direction: column;
-                justify-content: space-between;
-            } 
-            nav {
-                padding-bottom: 0;
-                padding-right: 20px;
-            }
+    /* Estilo al header */
+header {
+    background-color: map-get($map: $colores, $key:"blanco" );
+
+    @include tablet {
+        .container {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+    
+        .logo {
+            margin: auto;
+            padding: 25px 30px;
+            // font-weight: map-get($map: $fuentes, $key:"bold" );
+            font-size: 2em;
+        }
+        
+        nav {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        a { 
+            padding: 5px 12px;
+            text-decoration: none;
+            font-weight: bold;
+            color: map-get($map: $colores, $key:"negro" );
+    
+            &:hover {
+                color: map-get($map: $colores, $key:"principal" );
+            }
+         }
     } 
+}
+
         /* Nosotros */
         #somos-codeaya {
             @include tablet {

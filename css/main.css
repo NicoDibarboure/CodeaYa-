@@ -16,14 +16,13 @@ header {
     flex-direction: row;
     text-align: center;
     padding-bottom: 25px; }
-
-header a {
-  padding: 5px 12px;
-  text-decoration: none;
-  font-weight: bold;
-  color: black; }
-  header a:hover {
-    color: #8a2be2; }
+  header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black; }
+    header a:hover {
+      color: #8a2be2; }
 
 /* Imagen de fondo principal */
 #hero {
@@ -219,11 +218,11 @@ button {
 
 /* Carousel */
 .c-item {
-  height: 320px; }
+  height: 30%; }
 
 .c-img {
-  width: 100%;
-  object-fit: cover;
+  height: 600px;
+  position: sticky;
   filter: brightness(0.6); }
 
 /* Adaptacion a Desktop */
@@ -244,14 +243,31 @@ button {
   #hero h1 {
     font-size: 5em; } }
 
-/* Header */
-@media screen and (max-width: 1023px) {
-  header .container {
-    flex-direction: column;
-    justify-content: space-between; }
-  header nav {
-    padding-bottom: 0;
-    padding-right: 20px; } }
+/* Estilo al header */
+header {
+  background-color: white; }
+  @media screen and (max-width: 1023px) {
+    header .container {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    header .logo {
+      margin: auto;
+      padding: 25px 30px;
+      font-size: 2em; }
+    header nav {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 25px; }
+    header a {
+      padding: 5px 12px;
+      text-decoration: none;
+      font-weight: bold;
+      color: black; }
+      header a:hover {
+        color: #8a2be2; } }
 
 /* Nosotros */
 @media screen and (max-width: 1023px) {

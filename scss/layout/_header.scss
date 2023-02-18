@@ -33,11 +33,7 @@ header {
         text-align: center;
         padding-bottom: 25px;
     }
-    
-}
-
-header {
-    a{ 
+    a { 
         padding: 5px 12px;
         text-decoration: none;
         font-weight: bold;
@@ -46,6 +42,7 @@ header {
         &:hover {
             color: map-get($map: $colores, $key:"principal" );
         }
-    }
+     }
+    
 }
 
