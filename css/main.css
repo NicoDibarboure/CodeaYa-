@@ -100,11 +100,6 @@ ul {
 .container .logo {
   font-size: 80px; }
 
-/*  Imagenes estilo carta cursos */
-.programas {
-  text-align: center;
-  padding: 100px 20px; }
-
 /* Seccion de Cursos */
 #nuestros-cursos {
   background-color: #1e1e1e;
@@ -112,10 +107,17 @@ ul {
   text-align: center; }
   #nuestros-cursos .container {
     padding: 150px 10px; }
+  #nuestros-cursos .programas {
+    display: flex;
+    justify-content: center;
+    padding: 100px 20px; }
   #nuestros-cursos h2 {
     margin-top: 0; }
+  #nuestros-cursos h3 {
+    margin-top: 0; }
   #nuestros-cursos p {
-    display: none; }
+    display: block;
+    margin-bottom: 30px; }
   #nuestros-cursos .carta {
     background-repeat: no-repeat;
     background-size: cover;
@@ -268,17 +270,22 @@ header {
     width: 100%; } }
 
 /* Cursos */
-@media screen and (min-width: 820px) {
+@media screen and (max-width: 1023px) {
   #nuestros-cursos .programas {
     display: flex;
-    justify-content: center; }
-    #nuestros-cursos .programas p {
-      display: block;
-      margin-bottom: 30px; }
-    #nuestros-cursos .programas h3 {
-      margin-top: 0; }
-    #nuestros-cursos .programas .carta {
-      padding: 15px; } }
+    flex-direction: column;
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center; }
+  #nuestros-cursos .container {
+    padding: 100px 0px; }
+  #nuestros-cursos h2 {
+    margin-top: 0; }
+  #nuestros-cursos h3 {
+    margin-top: 0;
+    padding-bottom: 30px; }
+  #nuestros-cursos p {
+    display: none; } }
 
 /* Empleos */
 @media screen and (max-width: 1023px) {

@@ -1,27 +1,30 @@
-
-
-/*  Imagenes estilo carta cursos */
-.programas {
-    text-align: center;
-    padding: 100px 20px;
-}
-
 /* Seccion de Cursos */
 #nuestros-cursos {
     background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
-    
+
     .container {
         padding: 150px 10px;
+    }
+
+    .programas {
+        display: flex;
+        justify-content: center;
+        padding: 100px 20px;
     }
 
     h2 {
         margin-top: 0;
     }
 
+    h3 {
+        margin-top: 0;
+    }
+
     p {
-        display: none;
+        display: block;
+        margin-bottom: 30px;
     }
 
     .carta {

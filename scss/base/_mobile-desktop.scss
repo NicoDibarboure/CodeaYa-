@@ -78,21 +78,26 @@ header {
 
     /* Cursos */
     #nuestros-cursos {
-        @include mobile {
+        @include tablet {
         .programas {
             display: flex;
-            justify-content: center;
-            p {
-                display: block;
-                margin-bottom: 30px;
-            }
-            h3 {
-                margin-top: 0;
-            }
-        
-            .carta {
-                padding: 15px;
-            }
+            flex-direction: column;
+            background-color: rgb(30,30,30);
+            color: white;
+            text-align: center;
+        }
+        .container {
+            padding: 100px 0px;
+        }
+        h2{
+            margin-top: 0;
+        }
+        h3 {
+            margin-top: 0;
+            padding-bottom: 30px;
+        }
+        p{
+            display: none;
         }
     }
 }   
