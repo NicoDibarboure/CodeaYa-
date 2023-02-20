@@ -114,14 +114,17 @@ ul {
   #nuestros-cursos h2 {
     margin-top: 0; }
   #nuestros-cursos h3 {
-    margin-top: 0; }
+    margin-top: 0;
+    padding-bottom: 60px; }
   #nuestros-cursos p {
     display: block;
     margin-bottom: 30px; }
   #nuestros-cursos .carta {
+    background-size: 100% 150px;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-position-y: 0;
+    background-color: #323232;
+    box-shadow: 2px, 2px, 10px rgba(0, 0, 0, 0.5);
     padding: 50px;
     margin: 22px;
     border-radius: 18px; }
@@ -267,7 +270,19 @@ header {
     flex-direction: column;
     align-items: center; }
   #somos-codeaya .texto {
-    width: 100%; } }
+    width: 100%;
+    max-width: 600px;
+    padding: 0px 30px;
+    margin: 20px;
+    justify-content: center;
+    flex-direction: column; }
+  #somos-codeaya .img-container {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/somos-codeaya.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 800px;
+    margin: 30px; } }
 
 /* Cursos */
 @media screen and (max-width: 1023px) {
@@ -277,13 +292,17 @@ header {
     background-color: #1e1e1e;
     color: white;
     text-align: center; }
+  #nuestros-cursos .carta {
+    background-size: cover;
+    background-repeat: round; }
   #nuestros-cursos .container {
     padding: 100px 0px; }
   #nuestros-cursos h2 {
     margin-top: 0; }
   #nuestros-cursos h3 {
     margin-top: 0;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    font-size: calc(1em + 1vw); }
   #nuestros-cursos p {
     display: none; } }
 
@@ -319,11 +338,10 @@ header {
 #somos-codeaya .container {
   display: flex;
   justify-content: center;
-  margin: 10%; }
+  padding: 10px; }
 
 #somos-codeaya .texto {
-  width: 50%;
-  max-width: 600px;
+  max-width: 50%;
   padding: 0px 30px;
   margin: 20px;
   display: flex;
