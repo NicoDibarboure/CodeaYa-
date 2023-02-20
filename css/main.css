@@ -80,6 +80,7 @@ body {
 .color-acento {
   color: rgba(139, 215, 25, 0.818); }
 
+/* Tamaño al Logo principal */
 /* Titulos y texto */
 h1 {
   font-size: 3.5em; }
@@ -95,10 +96,6 @@ p {
 
 ul {
   list-style: none; }
-
-/* Tamaño al Logo principal */
-.container .logo {
-  font-size: 80px; }
 
 /* Seccion de Cursos */
 #nuestros-cursos {
@@ -146,15 +143,13 @@ ul {
   width: 100%;
   color: white;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/caracteristicas.png); }
-
-#caracteristicas h2 {
-  text-align: center; }
-
-#caracteristicas li {
-  font-size: 1.95rem;
-  margin: 20px 2px;
-  align-items: center;
-  font-weight: bold; }
+  #caracteristicas .imagen h2 {
+    text-align: center; }
+  #caracteristicas .imagen li {
+    font-size: 1.95rem;
+    margin: 20px 2px;
+    align-items: center;
+    font-weight: bold; }
 
 /* Botones */
 button {
@@ -182,15 +177,13 @@ button {
   width: 100%;
   color: white;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/caracteristicas.png); }
-
-#caracteristicas h2 {
-  text-align: center; }
-
-#caracteristicas li {
-  font-size: 1.95rem;
-  margin: 20px 2px;
-  align-items: center;
-  font-weight: bold; }
+  #caracteristicas .imagen h2 {
+    text-align: center; }
+  #caracteristicas .imagen li {
+    font-size: 1.95rem;
+    margin: 20px 2px;
+    align-items: center;
+    font-weight: bold; }
 
 /* Seccion para aplicar a los cursos*/
 #aplicar {

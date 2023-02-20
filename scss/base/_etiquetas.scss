@@ -23,7 +23,4 @@ ul {
     list-style: none;
 }
 
-/* Tamaño al Logo principal */
-.container .logo {
-    font-size: map-get($map: $fuentes, $key: "logo" );
-}
+

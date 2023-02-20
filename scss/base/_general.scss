@@ -30,3 +30,8 @@ body {
 .color-acento {
     color: map-get($map: $colores, $key: "color-acento");
 }
+
+/* Tamaño al Logo principal */
+.container .logo {
+    font-size: map-get($map: $fuentes, $key: "logo" );
+}
