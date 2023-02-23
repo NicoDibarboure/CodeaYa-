@@ -10,7 +10,7 @@ header {
   header .logo {
     margin: auto;
     padding: 25px 30px;
-    font-size: 2em; }
+    font-size: 5em; }
   header nav {
     display: flex;
     flex-direction: row;
@@ -38,9 +38,9 @@ header {
   background-size: cover;
   background-position: center center; }
   #hero h1 {
-    font-size: 2em; }
+    font-size: 8vw; }
   #hero button {
-    font-size: 1.85rem; }
+    font-size: 2.5vw; }
 
 /* Limites al contenedor */
 .container {
@@ -143,13 +143,15 @@ ul {
   width: 100%;
   color: white;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/caracteristicas.png); }
-  #caracteristicas .imagen h2 {
-    text-align: center; }
-  #caracteristicas .imagen li {
-    font-size: 1.95rem;
-    margin: 20px 2px;
-    align-items: center;
-    font-weight: bold; }
+
+#caracteristicas h2 {
+  text-align: center; }
+
+#caracteristicas li {
+  font-size: 1.95rem;
+  margin: 20px 2px;
+  align-items: center;
+  font-weight: bold; }
 
 /* Botones */
 button {
@@ -177,13 +179,15 @@ button {
   width: 100%;
   color: white;
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/caracteristicas.png); }
-  #caracteristicas .imagen h2 {
-    text-align: center; }
-  #caracteristicas .imagen li {
-    font-size: 1.95rem;
-    margin: 20px 2px;
-    align-items: center;
-    font-weight: bold; }
+
+#caracteristicas h2 {
+  text-align: center; }
+
+#caracteristicas li {
+  font-size: 1.95rem;
+  margin: 20px 2px;
+  align-items: center;
+  font-weight: bold; }
 
 /* Seccion para aplicar a los cursos*/
 #aplicar {
@@ -219,16 +223,22 @@ button {
     flex-direction: column;
     align-items: center;
     margin: auto;
-    font-size: 2rem; } }
+    font-size: 2.5rem; } }
 
 /* Hero */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 820px) {
   #hero {
-    height: 70vh; } }
-
-@media screen and (max-width: 1023px) {
-  #hero h1 {
-    font-size: 5em; } }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; } }
 
 /* Estilo al header */
 header {
@@ -273,8 +283,8 @@ header {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/somos-codeaya.jpg");
     background-size: cover;
     background-position: center center;
-    height: 500px;
-    width: 800px;
+    max-width: 100%;
+    height: auto;
     margin: 30px; } }
 
 /* Cursos */
@@ -299,6 +309,27 @@ header {
   #nuestros-cursos p {
     display: none; } }
 
+/* Seccion caracteristicas */
+@media screen and (max-width: 820px) {
+  #caracteristicas .imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/caracteristicas.png); }
+  #caracteristicas h2 {
+    font-size: 1.5rem;
+    text-align: center; }
+  #caracteristicas li {
+    font-size: 1.4rem;
+    margin: 20px 2px;
+    align-items: center;
+    font-weight: bold; } }
+
 /* Empleos */
 @media screen and (max-width: 1023px) {
   #nuestros-empleos .empleos {
@@ -311,6 +342,15 @@ header {
     margin-top: 0; }
   #nuestros-empleos .carta {
     padding: 15px; } }
+
+/* Carousel */
+@media screen and (max-width: 820px) {
+  .c-item {
+    height: 30%; }
+  .c-img {
+    height: 600px;
+    position: sticky;
+    filter: brightness(0.6); } }
 
 /* Footer */
 @media screen and (max-width: 1023px) {

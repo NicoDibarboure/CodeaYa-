@@ -5,25 +5,31 @@
                 flex-direction: column;
                 align-items: center;
                 margin: auto;
-                font-size: 2rem;
+                font-size: 2.5rem;
         } 
     }
 
 
     /* Hero */
-    #hero {
-        @include tablet {
-            height: 70vh;
-        }
-        h1 {
-            @include tablet {
-                font-size: 5em;
-            }
-        }
+
+#hero {
+    @include mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../img/fondo-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
     }
-
-
-
+}
     /* Estilo al header */
 header {
     background-color: map-get($map: $colores, $key:"blanco" );
@@ -85,8 +91,8 @@ header {
                     ), url("../../img/somos-codeaya.jpg");
                     background-size: cover;
                     background-position: center center;
-                    height: 500px;
-                    width: 800px;
+                    max-width: 100%;
+                    height: auto;
                     margin: 30px;
                  }
             }
@@ -123,7 +129,37 @@ header {
         }
     }
 }   
-        /* Empleos */
+
+/* Seccion caracteristicas */
+#caracteristicas {
+    @include mobile{
+    .imagen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 90vh;
+        width: 100%;
+        color: white;
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url(../img/caracteristicas.png);
+        }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    li {
+        font-size: 1.4rem;
+        margin: 20px 2px;
+        align-items: center;
+        font-weight: bold;
+    }  
+  }    
+}
+/* Empleos */
     
         #nuestros-empleos {
             @include tablet {
@@ -145,8 +181,21 @@ header {
                 padding: 15px;
             }
         }
-    }    
-        
+    } 
+    
+    /* Carousel */
+    @include mobile {
+        .c-item {
+            height: 30%;
+        }
+
+        .c-img {
+            height: 600px;
+            position:sticky;
+            
+            filter: brightness(0.6);
+    }
+}      
     /* Footer */
     footer {
         @include tablet {
